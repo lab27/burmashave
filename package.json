@@ -1,14 +1,14 @@
 {
-  "name": "collecture-wires",
+  "name": "burmashave",
   "version": "1.0.0",
-  "description": "Prototype for Collecture",
+  "description": "Prototype",
   "main": "index.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lab27/collecture-wires.git"
+    "url": "git+https://github.com/lab27/burmashave.git"
   },
   "keywords": [
     "collecture"
@@ -16,9 +16,9 @@
   "author": "Nick Niles",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lab27/collecture-wires/issues"
+    "url": "https://github.com/lab27/burmashave/issues"
   },
-  "homepage": "https://github.com/lab27/collecture-wires#readme",
+  "homepage": "https://github.com/lab27/burmashave#readme",
   "devDependencies": {
     "browser-sync": "^2.18.2",
     "gulp": "^3.9.1",

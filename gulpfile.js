@@ -5,6 +5,7 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 const gutil = require('gulp-util');
 const sass = require('gulp-sass');
+const clean = require('gulp-clean');
 
 const siteRoot = '_site';
 const cssFiles = '_css/**/*.?(s)css';
@@ -15,6 +16,11 @@ gulp.task('css', () => {
     //.pipe(sass())
     .pipe(concat('all.css'))
     .pipe(gulp.dest('css'));
+});
+
+gulp.task('clean', function () {
+    return gulp.src('_site', {read: false})
+        .pipe(clean());
 });
 
 gulp.task('jekyll', () => {
@@ -46,4 +52,4 @@ gulp.task('serve', () => {
   gulp.watch(cssFiles, ['css']);
 });
 
-gulp.task('default', ['css', 'jekyll', 'serve']);
+gulp.task('default', ['clean','css', 'jekyll', 'serve']);
